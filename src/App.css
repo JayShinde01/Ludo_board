@@ -1,25 +1,72 @@
-.box{
-  position: relative;
-  left: 400px;
-  
+/* ludo.css */
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f3f3f3;
+  margin: 0;
+  padding: 0;
 }
 
-.container{
-  border: 1px solid #000;
-  padding: 10px;
-  background: rgb(241, 234, 234);
+.box {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
 
-#red{
-  background: red;
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
-#green{
-  background: green;
+
+.container p {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 500;
 }
-#yellow{
-  background: yellow;
+
+button {
+  padding: 10px 16px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.2s ease;
 }
-#blue{
-  background: blue;
+
+button:hover {
+  transform: scale(1.05);
+}
+
+#blue {
+  background-color: #007bff;
+}
+
+#yellow {
+  background-color: #f1c40f;
+  color: black;
+}
+
+#green {
+  background-color: #28a745;
+}
+
+#red {
+  background-color: #dc3545;
+}
+
+@media (max-width: 600px) {
+  .box {
+    width: 90%;
+    padding: 16px;
+  }
+
+  button {
+    width: 100%;
+  }
 }
